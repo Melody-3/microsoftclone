@@ -1,0 +1,356 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+.container-full {
+    width: 100%;
+    display: flex;
+}
+
+.nav {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.nav a::after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background-color: black;
+    transition: .3s;
+}
+.nav a:hover::after{
+    width: 100px;
+}
+#left, #right{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+#left>img{
+    width: 108px;
+}
+#right {
+    justify-content: end;
+}
+
+/* Slider */
+#container {
+    display: flex;
+    position: relative;
+}
+
+#mainleft {
+    position: absolute;
+    left: 10%;
+    display: block;
+    width: 25%;
+    padding: 5% 0;
+}
+
+#mainleft h1 {
+    color: whitesmoke;
+}
+
+#mainleft a:link { 
+    text-decoration: none;
+}
+
+#mainleft p {
+    color: whitesmoke;
+}
+#mainright {
+    float: left;
+    width: 35%;
+    height: 500px;
+}
+
+#bilgi {
+    background-color: blue;
+    padding: 1%;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.main-page {
+    margin: auto;
+    text-align: center;
+}
+
+.box1 {
+   list-style: none;
+   text-align: center;
+   color: blue;
+}
+
+.box1-item {
+    display: inline-block;
+    padding: 50px;
+}
+
+.box1-item * {
+    display: block;
+}
+
+.box1-item img {
+    display: inline;
+    text-align: center;
+}
+
+.box1-item link {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+#four-logos {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.box2 {
+    width: 25%;
+}
+
+.box2 * {
+    margin-top: 8px;
+};
+
+.box2>h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.box2 img {
+    width: 100%;
+}
+
+.box2 a {
+    display: inline-block;
+    height: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.box2 a:hover {
+    border-bottom: 2px solid rgb(25, 25, 93);
+}
+
+/* ios-Android section */
+.ios-android-container {
+    margin-top: 100px;
+    margin-left: 75px;    
+    margin-right: 75px;
+    margin-bottom: 0px;
+}
+#ios-android {
+    height: 500px;
+    background-image: url("images/center_slide.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom bottom;
+}
+.ios-android-left,
+.ios-android-right {
+    float: left;
+    width: 40%;
+}
+
+.ios-android-left {
+    padding: 110px 100px;
+}
+
+.ios-android-left * {
+    margin-top: 20px;
+}
+
+.ios-android-left h2 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.ios-android-left p {
+    color: #000;
+}
+.ios-android-left a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0067b8;
+    padding: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.ios-android-left a:hover {
+    background-color: #08436f;
+}
+
+/* Business section */
+#business_logos_title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 26px;
+}
+#business-part {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.business {
+    width: 25%;
+}
+.business * {
+    margin-top: 8px;
+}
+.business>h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.business img {
+    width: 100%;
+}
+
+.business a {
+    display: inline-block;
+    height: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.business a:hover {
+    border-bottom: 2px solid rgb(25, 25, 93);
+}
+
+/* Last Section CSS */
+#bottom-section {
+    margin-top: 45px;
+    margin-left: 26px;
+  }
+  
+  .bottom-section-inline-block {
+    display: inline-block;
+  }
+  
+  .bottom-section-link {
+    margin-left: 20px;
+    color: #000;
+  }
+  
+  .bottom-section-icon {
+    font-size: 20px;
+  }
+  
+  /* Back to Top Button CSS */
+  #back-to-top-button {
+    display: inline-block;
+    width: 130px;
+    background-color: rgb(215, 207, 207);
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    position: fixed;
+    padding: 10px;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  #back-to-top-button:hover {
+    background-color: rgb(242, 222, 222);
+    box-shadow: rgba(5, 20, 35, 0.2) 0px 8px 24px;
+    transition: box-shadow 0.6s;
+    transition: 0.5s;
+  }
+  
+  /* Footer CSS */
+  footer {
+    background-color: rgb(217, 215, 215);
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    margin-top: auto;
+    padding-bottom: auto;
+  }
+   
+  .footer-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px 40px;
+    margin-bottom: 15px;
+  }
+
+  .footer-item a {
+    display: inline-block;
+    padding: 2px;
+    text-decoration: none;
+    color: rgb(23, 23, 23)
+    
+ }
+  
+  .footer-item a:hover {
+    border-bottom: 2px solid #000;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    width: 1100px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  
+  .footer-bottom a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+  }
+  
+  .footer-bottom p {
+    color: #000;
+    font-size: 13px;
+  }
+  
+  .footer-bottom a:hover {
+    border-bottom: 2px solid #000;
+  }
+  
+  .footer-bottom a {
+    margin-left: 15px;
+  }
+  
+  .footer-bottom p {
+    margin-left: 15px;
+  }
+  
+  .footer-bottom-left,
+  .footer-bottom-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-bottom-right {
+    justify-content: end;
+  }
